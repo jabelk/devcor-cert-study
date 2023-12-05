@@ -6,8 +6,9 @@
 [Nick Russo Study Plan](https://lostintransit.se/2020/03/04/my-cisco-certified-devnet-professional-journey-part-1-by-nick-russo/)
 
 
-## Exam Topics
+## Exam Topics 1.0
 [Exam Topics](https://www.cisco.com/c/dam/en_us/training-events/le31/le46/cln/marketing/exam-topics/350-901-DEVCOR.pdf)
+[Exam Topics 1.1 starting Jan 22, 2024](https://learningcontent.cisco.com/documents/marketing/exam-topics/350-901-DEVCOR-v1.1.pdf)
 
 ### 20% 1.0 Software Development and Design
 - 1.1 Describe distributed applications related to the concepts of front-end, back-end, and
