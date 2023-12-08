@@ -224,3 +224,31 @@ Event-Driven Architecture:
 creating / consuming / reacting to events (significant state change). event sent to event consumers to trigger reactions. Middle-ware with Event Broker (placed in queue and dispatched to event processor) and Event Mediator (cooridanted to process )
 
 ## Sequence Diagrams
+
+One of the main components of these diagrams are participants. Participants are the individual components that interact with others within the model. Participants use the notation of “ObjectName:className" as you can see in the example of "P1:Participant," where P1 is the instance object name and Participant is the class name. If the instance name of the class is irrelevant, it can be skipped and that participant is displayed simply as ":Participant."
+
+an **actor** interact with the application, users. can also be an API service.
+
+Each participant has its own **lifeline**. A lifeline indicates the participant's presence and activity over time. They can become activated, displaying that they are busy executing a task or waiting for a message. A narrow rectangle denotes an activated lifeline, as you can see in the example of an Actor's lifeline after sending a Request and before receiving a Response. When a participant is no longer busy, its lifeline becomes deactivated.
+
+Interactions between participants are conveyed by **messages**, depicted by arrows between participant's lifelines.
+Grouping operators are used to create combined fragments—logical groupings that contain conditional structure, represented by a rectangle in the sequence diagram. Each combined fragment is composed from one or more interactions and interaction operator.
+
+The "opt" operator works as a simple IF statement.
+
+The "alt" operator is used for IF...ELSE..THEN statements and can have as many conditions as are needed.
+
+Loops are created with the "loop" operator. To break the loop prematurely, the "break" operator can be used. Break is also used to handle errors in the application flow.
+
+Finally, the "par" operator depicts parallelism. All the fragments inside this combined fragment are executed in parallel.
+
+A good practice is to use an Entity-Control-Boundary (ECB) pattern, which is a variation of the Model-View-Controller (MVC) pattern that also encapsulates some business logic.
+
+An Entity is an object that represents some meaningful chunk of system data. It correlates to an MVC model, such as a Customer entity.
+
+Control objects represent MVC controllers and manage the flow of interactions between boundaries and entities. They manage the processing and execution of the commands coming from a system boundary.
+
+Boundaries represent MVC views and are responsible for interaction with external actors, such as a form on the user interface.
+
+## Lab: Construct a Sequence Diagram
+
